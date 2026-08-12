@@ -96,8 +96,6 @@ export default defineConfig({
       }
     ],
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/DirectTrust' }],
-
     search: {
       provider: 'local'
     },
