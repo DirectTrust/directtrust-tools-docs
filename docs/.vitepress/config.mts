@@ -69,7 +69,10 @@ export default defineConfig({
         text: 'Directory Tools',
         link: '/directory-tools',
         collapsed: true,
-        items: [{ text: 'Compliance Checking', link: '/compliance-checking' }]
+        items: [
+          { text: 'Directory Search', link: '/directory-search' },
+          { text: 'Compliance Checking', link: '/compliance-checking' }
+        ]
       },
       {
         text: 'Management',
