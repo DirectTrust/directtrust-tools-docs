@@ -4,7 +4,7 @@ title: Getting Started
 
 # Getting Started
 
-When a user visits DirectTrust Tools without being logged in, they are greeted by a welcome page that describes the platform and prompts them to log in. No tools or navigation options (except documentation) are visible until authentication is complete.
+When a user visits [DirectTrust Tools](https://accreditation-testing.directtrust.org/) without being logged in, they are greeted by a welcome page that describes the platform and prompts them to log in. No tools or navigation options (except documentation) are visible until authentication is complete.
 
 ![The DirectTrust Tools landing page before login](/images/getting-started/1.png)
 
