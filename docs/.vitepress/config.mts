@@ -22,6 +22,7 @@ export default defineConfig({
       {
         text: 'HISP Tools',
         link: '/hisp-tools',
+        collapsed: false,
         items: [
           { text: 'Certificate Hosting', link: '/certificate-hosting' },
           { text: 'Certificate Discovery', link: '/certificate-discovery' },
@@ -30,15 +31,18 @@ export default defineConfig({
           {
             text: 'Edge Protocols',
             link: '/edge-protocols',
+            collapsed: false,
             items: [
               {
                 text: 'XDR',
                 link: '/xdr-edge',
+                collapsed: false,
                 items: [
                   { text: 'HISP To Edge', link: '/xdr-hisp-to-edge' },
                   {
                     text: 'Edge to HISP',
                     link: '/xdr-edge-to-hisp',
+                    collapsed: false,
                     items: [
                       { text: 'XDR To XDM Conversion', link: '/xdr-to-xdm-conversion' },
                       { text: 'Delivery Notification', link: '/xdr-edge-delivery-notification' }
@@ -49,6 +53,7 @@ export default defineConfig({
               {
                 text: 'SMTP',
                 link: '/smtp-edge',
+                collapsed: false,
                 items: [
                   { text: 'SMTP Transport', link: '/smtp-edge-transport' },
                   { text: 'Delivery Notification', link: '/smtp-edge-delivery-notification' }
@@ -63,16 +68,19 @@ export default defineConfig({
       {
         text: 'Directory Tools',
         link: '/directory-tools',
+        collapsed: false,
         items: [{ text: 'Compliance Checking', link: '/compliance-checking' }]
       },
       {
         text: 'Management',
         link: '/management',
+        collapsed: false,
         items: [
           { text: 'User Settings', link: '/user-settings' },
           {
             text: 'Server Configuration',
             link: '/server-configuration',
+            collapsed: false,
             items: [
               { text: 'SMTP', link: '/server-configuration-smtp' },
               { text: 'POP3', link: '/server-configuration-pop3' },
