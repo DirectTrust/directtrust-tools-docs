@@ -50,7 +50,21 @@ npm install
 
 Requires Node.js (18+) and npm. No Ruby, Jekyll, or other toolchain needed.
 
-### 2. Editing an existing page
+### 2. Recommended editor setup
+
+Use **VS Code** to write and edit `.md` files (the built-in Markdown support, or the Markdown All in One extension, is enough — no special VitePress plugin required). Alongside it, keep a terminal open running:
+
+```bash
+npm run docs:dev
+```
+
+and a browser tab open on `http://localhost:5173/directtrust-tools-docs/`. This is the setup to use for both authoring and previewing:
+
+- **VS Code** is where you write and edit the Markdown source.
+- **The dev server tab** is where you check the result — it's the only accurate preview of what the published page will actually look like, because it renders through the real VitePress theme (nav, sidebar, custom CSS, search) and understands VitePress-only syntax like `::: tip` callout boxes and frontmatter-driven titles. VS Code's own Markdown preview does *not* understand any of that, so don't rely on it to judge how a page will really appear once published.
+- The dev server hot-reloads on save, so keep both windows open side by side while you work and the browser tab updates automatically as you edit.
+
+### 3. Editing an existing page
 
 Open the relevant `docs/<slug>.md` file and edit it directly — it's plain Markdown:
 - `#`, `##`, `###` for headings
@@ -59,7 +73,7 @@ Open the relevant `docs/<slug>.md` file and edit it directly — it's plain Mark
 - `| col | col |` tables (standard GitHub-flavored Markdown)
 - `::: tip\nSome note here.\n:::` for the green callout boxes used throughout (e.g. "Note: you must first create a configuration profile...")
 
-### 3. Adding a new page
+### 4. Adding a new page
 
 1. Create `docs/<new-slug>.md` with a frontmatter title:
    ```markdown
@@ -73,7 +87,7 @@ Open the relevant `docs/<slug>.md` file and edit it directly — it's plain Mark
    ```
 2. Add an entry for it to the `sidebar` array in `docs/.vitepress/config.mts`, nested under the appropriate parent section. The sidebar is hand-maintained in this config file — it is **not** auto-generated from the files in `docs/`, so a page that exists but isn't listed here won't show up in navigation (though it's still reachable by direct URL).
 
-### 4. Adding or updating screenshots
+### 5. Adding or updating screenshots
 
 Save the image file directly into `docs/public/images/<slug>/` (create the folder if it doesn't exist) and reference it in the Markdown with an absolute path plus an italic caption line underneath:
 
@@ -85,13 +99,9 @@ Save the image file directly into `docs/public/images/<slug>/` (create the folde
 
 Never paste a screenshot in as a base64 data URI — always save it as a real image file and reference it by path. This keeps `.md` files small and diffable in pull requests, unlike the original HTML docs where every screenshot bloated the page source.
 
-### 5. Test your changes locally
+### 6. Test your changes locally
 
-```bash
-npm run docs:dev
-```
-
-Starts a local dev server with hot reload — edits to any `.md` file appear in the browser immediately without a manual rebuild. Because of the `base` setting mentioned above, the site is served under a path rather than at the server root: go to `http://localhost:5173/directtrust-tools-docs/` (visiting `http://localhost:5173/` alone will redirect you there). Use this to check that your content, links, images, and nav placement look right before publishing.
+The `npm run docs:dev` server from step 2 is what you should already have running as you write — it's the day-to-day way to check that content, links, images, and nav placement look right before publishing. Because of the `base` setting mentioned above, the site is served under a path rather than at the server root: go to `http://localhost:5173/directtrust-tools-docs/` (visiting `http://localhost:5173/` alone will redirect you there).
 
 To double check exactly what will ship (the real production build, not the dev server), you can also run:
 
@@ -100,7 +110,7 @@ npm run docs:build      # builds docs/.vitepress/dist, same as CI does
 npm run docs:preview    # serves that built output locally so you can verify it
 ```
 
-### 6. Publish
+### 7. Publish
 
 Commit your change and push (or open a PR and merge) to `main`:
 
