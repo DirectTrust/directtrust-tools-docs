@@ -73,7 +73,8 @@ export default defineConfig({
               { text: 'IMAP', link: '/server-configuration-imap' },
               { text: 'XDR', link: '/server-configuration-xdr' }
             ]
-          }
+          },
+          { text: 'Results and Reports', link: '/results-and-reports' }
         ]
       }
     ],
