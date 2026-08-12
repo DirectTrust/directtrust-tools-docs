@@ -22,3 +22,7 @@ Each Direct address in the results will be accompanied by a green information bu
 ![Directory Search results showing Direct addresses with the certificate discovery button](/images/directory-search/2.png)
 
 *Directory Search results showing Direct addresses with the certificate discovery button*
+
+![Certificate details discovered for a Direct address](/images/directory-search/3.png)
+
+*Certificate details discovered for a Direct address*
