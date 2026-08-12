@@ -60,12 +60,9 @@ export default defineConfig({
         ]
       },
       {
-        // `items` (even empty) is required here — without it VitePress folds this
-        // entry into an invisible wrapper group as a plain-weight link instead of
-        // rendering it as its own bold top-level section header like HISP Tools.
         text: 'Management',
         link: '/management',
-        items: []
+        items: [{ text: 'User Settings', link: '/user-settings' }]
       }
     ],
 
