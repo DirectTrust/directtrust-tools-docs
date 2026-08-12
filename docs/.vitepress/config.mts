@@ -58,7 +58,8 @@ export default defineConfig({
             ]
           }
         ]
-      }
+      },
+      { text: 'Management', link: '/management' }
     ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/DirectTrust' }],
