@@ -85,7 +85,24 @@ Open the relevant `docs/<slug>.md` file and edit it directly — it's plain Mark
 
    Content goes here...
    ```
-2. Add an entry for it to the `sidebar` array in `docs/.vitepress/config.mts`, nested under the appropriate parent section. The sidebar is hand-maintained in this config file — it is **not** auto-generated from the files in `docs/`, so a page that exists but isn't listed here won't show up in navigation (though it's still reachable by direct URL).
+2. Add it to the navigation in `docs/.vitepress/config.mts`. Nothing generates navigation automatically from the files in `docs/` — if a page isn't added here, it won't show up in the nav or sidebar (it's still reachable by direct URL, just not discoverable). There are two separate structures in that file:
+
+   - **`sidebar`** — the left-hand nav pane, and where almost every page belongs. It's a nested tree of objects: `{ text: 'Label', link: '/slug', items: [...] }`. Each `items` array is a collapsible group of children, and `items` can nest inside `items` to any depth — that's how the current XDR/SMTP hierarchy under "Edge Protocols" is built.
+   - **`nav`** — the top nav bar. Only used for a couple of top-level entry points (currently "Overview" and "Getting Started"); most new pages do **not** need an entry here.
+
+   To add a page under an existing section, find its parent object in `sidebar` and append a `{ text, link }` entry to that parent's `items` array. For example, adding a new page under "SMTP":
+   ```ts
+   {
+     text: 'SMTP',
+     link: '/smtp-edge',
+     items: [
+       { text: 'SMTP Transport', link: '/smtp-edge-transport' },
+       { text: 'Delivery Notification', link: '/smtp-edge-delivery-notification' },
+       { text: 'My New Page', link: '/my-new-page' } // new entry
+     ]
+   }
+   ```
+   To nest a page *under* the one you just added (another level deep), give it its own `items: [...]` array the same way. To add a whole new top-level section (a sibling of "HISP Tools"), add a new object directly to the root `sidebar` array instead of inside an existing `items`.
 
 ### 5. Adding or updating screenshots
 
