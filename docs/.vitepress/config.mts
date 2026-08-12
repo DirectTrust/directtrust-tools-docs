@@ -8,7 +8,7 @@ export default defineConfig({
   lastUpdated: true,
 
   themeConfig: {
-    logo: undefined,
+    logo: '/directtrust-logo.png',
 
     nav: [
       { text: 'Overview', link: '/overview' },

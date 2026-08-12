@@ -5,6 +5,9 @@ hero:
   name: DirectTrust Tools
   text: Documentation
   tagline: Guide for the DirectTrust Tool Suites
+  image:
+    src: /directtrust-logo.png
+    alt: DirectTrust
   actions:
     - theme: brand
       text: Overview

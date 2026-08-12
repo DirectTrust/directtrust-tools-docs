@@ -85,20 +85,75 @@
   color: #ffffff;
 }
 
-/* Home page hero: VitePress only centers this content when a hero image is
-   present (.VPHero.has-image). We don't use one, so without this the name,
-   tagline, and action buttons sit left-aligned. Center them unconditionally. */
+/* Home page hero: force a single centered column (logo above title) at every
+   viewport width, instead of VitePress's default of only centering on mobile
+   and switching to a left-aligned two-column "text left, image right" layout
+   once a hero image is present at wider viewports (.VPHero.has-image). */
 .VPHero .container {
-  text-align: center;
+  flex-direction: column !important;
+  text-align: center !important;
+}
+
+.VPHero .main {
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 .VPHero .name,
 .VPHero .text,
 .VPHero .tagline {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .VPHero .actions {
-  justify-content: center;
+  justify-content: center !important;
+}
+
+/* Logo sits above the title instead of beside it, and drops the default
+   decorative color-blob background sized for a square avatar-style image. */
+.VPHero .image {
+  order: -1;
+  flex-grow: 0 !important;
+  margin: 0 0 20px !important;
+  min-height: 0 !important;
+}
+
+.VPHero .image-container {
+  width: auto;
+  height: auto;
+}
+
+.VPHero .image-bg {
+  display: none;
+}
+
+.VPHero .image-src {
+  position: static;
+  transform: none;
+  max-width: 220px;
+  max-height: 100px;
+}
+
+/* DirectTrust nav logo: a wide horizontal lockup, not the square icon
+   VitePress's default nav sizing assumes, so give it more height. */
+:root {
+  --vp-nav-logo-height: 32px;
+}
+
+/* The logo's wordmark is a medium gray tuned for a light background, so it
+   loses contrast on dark mode's near-black chrome. Give it a light backing
+   chip in dark mode rather than altering the brand asset's colors. */
+.dark .VPNavBarTitle .logo,
+.dark .VPHero .image-src {
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.dark .VPNavBarTitle .logo {
+  padding: 3px 8px;
+}
+
+.dark .VPHero .image-src {
+  padding: 12px 20px;
 }
