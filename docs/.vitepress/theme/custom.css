@@ -14,6 +14,11 @@
 
   --doc-accent-green: #5cb172;
   --doc-callout-bg: #f3fbf5;
+
+  /* VitePress defaults the sidebar to --vp-c-bg-alt (a slightly different shade
+     than the main content's --vp-c-bg), which reads as a visible seam between
+     the nav pane and the page. Match it to the content background instead. */
+  --vp-sidebar-bg-color: var(--vp-c-bg);
 }
 
 .dark {
