@@ -9,6 +9,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/directtrust-logo.png',
+    siteTitle: false,
 
     nav: [
       { text: 'Overview', link: '/overview' },
