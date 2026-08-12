@@ -74,5 +74,5 @@ The compliance checks are broken down into compliance categories. The following 
 | --- | --- |
 | Data Representation Format | Non-ASCII characters, phone format (E.164), state codes (ISO 3166-2:US), address conventions, ZIP code format, name conventions. |
 | Certificate Content | **BA Organizations** (BAORG) — entries whose certificate entity type is Business Associate but have an NPI number; **Missing Entity Type** (MISSENT) — endpoints where the certificate is missing the entity type policy OID; **Missing Certificate** (MISSCERT) — endpoints with no discoverable certificate. |
-| Directory Contribution & Publication | **Patient Address** (PUBPATAD) — patient-type entries that should not be published. |
+| Directory Contribution & Publication | **Patient Addresses** (PUBPATAD) — patient-type entries that should not be published. |
 | Miscellaneous | **Endpoint Verification** (ENDPTVER) — endpoints that have not been verified or failed verification. |
