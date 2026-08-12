@@ -85,54 +85,100 @@
   color: #ffffff;
 }
 
-/* Home page hero: force a single centered column (logo above title) at every
-   viewport width, instead of VitePress's default of only centering on mobile
-   and switching to a left-aligned two-column "text left, image right" layout
-   once a hero image is present at wider viewports (.VPHero.has-image). */
-.VPHero .container {
-  flex-direction: column !important;
-  text-align: center !important;
+/* Drop the divider line VitePress puts above the Previous/Next page footer */
+.VPDocFooter .prev-next {
+  border-top: none;
 }
 
-.VPHero .main {
-  width: 100% !important;
-  max-width: 100% !important;
+/* Home page hero: index.md is a plain doc page (not VitePress's special
+   layout: home) so the sidebar shows there like every other page. This is a
+   hand-built lookalike of VitePress's VPHero component, styled with the same
+   button/brand CSS variables the theme already defines. */
+.home-hero {
+  text-align: center;
+  padding: 32px 0 40px;
 }
 
-.VPHero .name,
-.VPHero .text,
-.VPHero .tagline {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.VPHero .actions {
-  justify-content: center !important;
-}
-
-/* Logo sits above the title instead of beside it, and drops the default
-   decorative color-blob background sized for a square avatar-style image. */
-.VPHero .image {
-  order: -1;
-  flex-grow: 0 !important;
-  margin: 0 0 20px !important;
-  min-height: 0 !important;
-}
-
-.VPHero .image-container {
+.home-hero-logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 220px;
+  max-height: 100px;
   width: auto;
   height: auto;
 }
 
-.VPHero .image-bg {
-  display: none;
+.home-hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
 }
 
-.VPHero .image-src {
-  position: static;
-  transform: none;
-  max-width: 220px;
-  max-height: 100px;
+.home-hero-name {
+  color: var(--vp-c-brand-1);
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 700;
+}
+
+.home-hero-text {
+  color: var(--vp-c-text-1);
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 700;
+}
+
+.home-hero-tagline {
+  margin: 12px 0 0;
+  color: var(--vp-c-text-2);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.home-hero-btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 0 20px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+}
+
+.home-hero-btn.brand {
+  border-color: var(--vp-button-brand-border);
+  color: var(--vp-button-brand-text);
+  background-color: var(--vp-button-brand-bg);
+}
+
+.home-hero-btn.brand:hover {
+  border-color: var(--vp-button-brand-hover-border);
+  color: var(--vp-button-brand-hover-text);
+  background-color: var(--vp-button-brand-hover-bg);
+}
+
+.home-hero-btn.alt {
+  border-color: var(--vp-button-alt-border);
+  color: var(--vp-button-alt-text);
+  background-color: var(--vp-button-alt-bg);
+}
+
+.home-hero-btn.alt:hover {
+  border-color: var(--vp-button-alt-hover-border);
+  color: var(--vp-button-alt-hover-text);
+  background-color: var(--vp-button-alt-hover-bg);
 }
 
 /* DirectTrust nav logo: a wide horizontal lockup, not the square icon
@@ -145,7 +191,7 @@
    loses contrast on dark mode's near-black chrome. Give it a light backing
    chip in dark mode rather than altering the brand asset's colors. */
 .dark .VPNavBarTitle .logo,
-.dark .VPHero .image-src {
+.dark .home-hero-logo {
   background-color: #ffffff;
   border-radius: 6px;
 }
@@ -154,6 +200,6 @@
   padding: 3px 8px;
 }
 
-.dark .VPHero .image-src {
+.dark .home-hero-logo {
   padding: 12px 20px;
 }

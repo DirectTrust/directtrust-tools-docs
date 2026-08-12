@@ -5,7 +5,6 @@ export default defineConfig({
   description: 'Documentation for the DirectTrust Accreditation Testing Toolset',
   base: '/directtrust-tools-docs/',
   cleanUrls: true,
-  lastUpdated: true,
 
   themeConfig: {
     logo: '/directtrust-logo.png',
