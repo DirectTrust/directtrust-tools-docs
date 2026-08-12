@@ -3,10 +3,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'DirectTrust Tools',
   description: 'Documentation for the DirectTrust Accreditation Testing Toolset',
+  base: '/directtrust-tools-docs/',
   cleanUrls: true,
   lastUpdated: true,
-
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
 
   themeConfig: {
     logo: undefined,

@@ -1,15 +1,17 @@
-# directtrust-tools.github.io
+# directtrust-tools-docs
 
 Documentation site for the [DirectTrust Accreditation Testing Toolset](https://github.com/DirectTrust/accreditation-tools) (the `accreditation-testing-backend`, `accreditation-backend-gateway`, and `accreditation-testing-frontend` services) — the guides that explain what each tool does and how to use it: certificate discovery, Direct message send/receive, and XDR/SMTP/POP3/IMAP edge protocol testing.
 
-This content used to live as static, self-contained HTML files baked into the backend service and served through a REST endpoint (`/api/documentation/{section}`), rendered inside the web app via an iframe. It's now a standalone [VitePress](https://vitepress.dev) site, written in Markdown, and published to `https://directtrust-tools.github.io/` via GitHub Pages. Moving it here means docs can be edited without touching application code or cutting a backend release, get proper version-controlled diffs on every change, and gain built-in navigation and full-text search. The web app's documentation nav will link out to this site in a new tab rather than rendering the content in-app.
+This content used to live as static, self-contained HTML files baked into the backend service and served through a REST endpoint (`/api/documentation/{section}`), rendered inside the web app via an iframe. It's now a standalone [VitePress](https://vitepress.dev) site, written in Markdown, and published to `https://directtrust.github.io/directtrust-tools-docs/` via GitHub Pages. Moving it here means docs can be edited without touching application code or cutting a backend release, get proper version-controlled diffs on every change, and gain built-in navigation and full-text search. The web app's documentation nav will link out to this site in a new tab rather than rendering the content in-app.
+
+This repo is a project site (not the org's special `DirectTrust.github.io` root-domain repo), so it's served under a path rather than at the bare `directtrust.github.io` domain. VitePress is configured with `base: '/directtrust-tools-docs/'` in `docs/.vitepress/config.mts` to match — if this repo is ever renamed again, that value has to be updated to match, or every internal link/image/asset path breaks.
 
 This README is for anyone writing or editing documentation content, not just developers — the day-to-day workflow only requires editing Markdown files and running two npm commands.
 
 ## Where the files live
 
 ```
-directtrust-tools.github.io/
+directtrust-tools-docs/
 ├── docs/                          ← everything you'll actually edit
 │   ├── .vitepress/
 │   │   ├── config.mts             ← site title, nav, sidebar structure, search
@@ -34,15 +36,15 @@ directtrust-tools.github.io/
 
 ## How it gets hosted
 
-GitHub Pages is configured to deploy from GitHub Actions (repo **Settings → Pages → Build and deployment → Source → GitHub Actions**), not from a branch. `.github/workflows/deploy.yml` runs on every push to `main`: checks out the repo, installs dependencies, runs `docs:build`, and hands the `dist/` folder to GitHub's official Pages deploy action. No separate server, no Jekyll — the workflow *is* the deploy pipeline. A push to `main` is live at `https://directtrust-tools.github.io/` about a minute later.
+GitHub Pages is configured to deploy from GitHub Actions (repo **Settings → Pages → Build and deployment → Source → GitHub Actions**), not from a branch. `.github/workflows/deploy.yml` runs on every push to `main`: checks out the repo, installs dependencies, runs `docs:build`, and hands the `dist/` folder to GitHub's official Pages deploy action. No separate server, no Jekyll — the workflow *is* the deploy pipeline. A push to `main` is live at `https://directtrust.github.io/directtrust-tools-docs/` about a minute later.
 
 ## Workflow for writing or editing content
 
 ### 1. One-time setup
 
 ```bash
-git clone https://github.com/DirectTrust/directtrust-tools.github.io.git
-cd directtrust-tools.github.io
+git clone https://github.com/DirectTrust/directtrust-tools-docs.git
+cd directtrust-tools-docs
 npm install
 ```
 
@@ -89,7 +91,7 @@ Never paste a screenshot in as a base64 data URI — always save it as a real im
 npm run docs:dev
 ```
 
-Starts a local dev server (default `http://localhost:5173`) with hot reload — edits to any `.md` file appear in the browser immediately without a manual rebuild. Use this to check that your content, links, images, and nav placement look right before publishing.
+Starts a local dev server with hot reload — edits to any `.md` file appear in the browser immediately without a manual rebuild. Because of the `base` setting mentioned above, the site is served under a path rather than at the server root: go to `http://localhost:5173/directtrust-tools-docs/` (visiting `http://localhost:5173/` alone will redirect you there). Use this to check that your content, links, images, and nav placement look right before publishing.
 
 To double check exactly what will ship (the real production build, not the dev server), you can also run:
 
@@ -108,9 +110,10 @@ git commit -m "Update POP3 edge documentation"
 git push
 ```
 
-That's it — no manual build or deploy step. The GitHub Actions workflow builds the site and publishes it to `https://directtrust-tools.github.io/` automatically. You can watch progress under the repo's **Actions** tab.
+That's it — no manual build or deploy step. The GitHub Actions workflow builds the site and publishes it to `https://directtrust.github.io/directtrust-tools-docs/` automatically. You can watch progress under the repo's **Actions** tab.
 
 ## Known quirks
 
 - `docs/pop3-edge.md` has `title: POP3` (used in the nav) but an `<h1>POP3 Edge</h1>` in the body — a pre-existing inconsistency carried over from the original HTML, not a conversion bug.
 - The original `xdr-edge-deliviery-notification.html` filename typo was corrected to `docs/xdr-edge-delivery-notification.md` (URL/slug only, not the visible content).
+- If this repository is ever renamed again, `base` in `docs/.vitepress/config.mts` must be updated to match the new repo name (`/<new-name>/`), or the site 404s on all its own assets/images even though the build succeeds — GitHub Pages happily builds and deploys a site with the wrong base path, it just won't render correctly. This is also why the site is *not* at the bare `https://directtrust-tools.github.io/` you might expect: only a repo named exactly `DirectTrust.github.io` gets that root-domain treatment; anything else is a project page served under `/repo-name/`.
