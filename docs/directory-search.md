@@ -17,11 +17,11 @@ The Directory Search Tool makes looking up Directory listings easy to support tr
 -   Click the search button.
 -   The first n search results are displayed within the application. You can page through additional search results using the Previous and Next buttons.
 
-Each Direct address in the results will be accompanied by a green information button that, when clicked, will discover and show details of the certificate associated with that Direct address.
-
 ![Directory Search results showing Direct addresses with the certificate discovery button](/images/directory-search/2.png)
 
 *Directory Search results showing Direct addresses with the certificate discovery button*
+
+Each Direct address in the results will be accompanied by a green information button that, when clicked, will discover and show details of the certificate associated with that Direct address.
 
 ![Certificate details discovered for a Direct address](/images/directory-search/3.png)
 
