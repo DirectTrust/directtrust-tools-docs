@@ -62,7 +62,19 @@ export default defineConfig({
       {
         text: 'Management',
         link: '/management',
-        items: [{ text: 'User Settings', link: '/user-settings' }]
+        items: [
+          { text: 'User Settings', link: '/user-settings' },
+          {
+            text: 'Server Configuration',
+            link: '/server-configuration',
+            items: [
+              { text: 'SMTP', link: '/server-configuration-smtp' },
+              { text: 'POP3', link: '/server-configuration-pop3' },
+              { text: 'IMAP', link: '/server-configuration-imap' },
+              { text: 'XDR', link: '/server-configuration-xdr' }
+            ]
+          }
+        ]
       }
     ],
 
