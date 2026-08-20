@@ -4,7 +4,7 @@ title: Direct Receive Messages
 
 # Direct Receive Messages
 
-This test exercises a HISP’s system ability to receive properly formatted Direct messages and either respond with the correct notification messages or reject the message due to security and trust violations. The tool sends a suite of test messages to the specified Direct address covering multiple scenarios such as normal delivery, signed-only messages, and messages with various attachment types. It then monitors for appropriate MDN responses and reports the outcome of each scenario.
+This test exercises a HISP’s ability to receive properly formatted Direct messages and either respond with the correct notification messages or reject the message due to security and trust violations. The tool sends a suite of test messages to the specified Direct address covering multiple scenarios such as normal delivery, signed-only messages, and messages with various attachment types. It then monitors for appropriate MDN responses and reports the outcome of each scenario.
 
 ::: tip
 **Note:** You can only send to a Direct address that you registered in the User Settings.

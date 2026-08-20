@@ -10,7 +10,7 @@ DirectTrust Tools is a web-based platform that gives DirectTrust portal members 
 
 DirectTrust Tools was designed around three core principles:
 
--   **Uniform Login Experience** — All users authenticate through a single sign-on flow backed by the DirectTrust Portal (powered by Zoho) or Google. Portal members use the DirectTrust Auth login, which validates their portal membership before issuing a one time use passcode, and DirectTrust staff log in via Google OAuth.
+-   **Uniform Login Experience** — All users authenticate through a single sign-on flow backed by the DirectTrust Portal (powered by Zoho) or Google. Portal members use the DirectTrust Auth login, which validates their portal membership before issuing a one-time-use passcode, and DirectTrust staff log in via Google OAuth.
 -   **Centralized Report Management** — Test results are stored in the tool and linked to the user's account. Unlike other testing sites, there is no need to manually download individual artifacts after running a test, track spreadsheets locally, or re-run tests just to produce a fresh PDF. Users can select any combination of managed results and generate a formal report that is delivered directly to their registered email address.
 -   **Single Point of Entry for DirectTrust Tools** — Workflows including but not limited to HISP testing, certificate validation, directory compliance checking, and metadata inspection are all available from one interface. Access to each tool is governed by permissions granted by DirectTrust, so users see only the capabilities that apply to their identity.
 

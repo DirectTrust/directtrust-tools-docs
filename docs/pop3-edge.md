@@ -33,7 +33,7 @@ The POP3 testing tools verify a POP3 server implementation, including POP3S/STLS
 
 *Completed POP3 Edge Protocol test suite showing SUCCESS with per-scenario results.*
 
-Each of the tests maps to a specific SMTP Direct messaging scenario. The following table lists all tests and the scenario they cover:
+Each of the tests maps to a specific POP3 Direct messaging scenario. The following table lists all tests and the scenario they cover:
 
 ## Test Scenarios
 
