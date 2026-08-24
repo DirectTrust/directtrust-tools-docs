@@ -24,7 +24,15 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Certificate Hosting', link: '/certificate-hosting' },
-          { text: 'Certificate Discovery', link: '/certificate-discovery' },
+          {
+            text: 'Certificate Discovery',
+            link: '/certificate-discovery',
+            collapsed: true,
+            items: [
+              { text: 'Single Message, Multiple Recipients', link: '/certificate-discovery-multiple-recipients' },
+              { text: 'Single Recipient Per Message', link: '/certificate-discovery-single-recipient' }
+            ]
+          },
           { text: 'Direct Receive Messages', link: '/direct-receive-message' },
           { text: 'Direct Send Messages', link: '/direct-send-message' },
           {
