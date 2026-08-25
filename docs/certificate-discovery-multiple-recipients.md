@@ -8,7 +8,7 @@ This Certificate Discovery testing option is executed by sending a **single** Di
 
 ![The Single Message, Multiple Recipients testing option](/images/certificate-discovery-multiple-recipients/1.png)
 
-*The Single Message, Multiple Recipients testing option*
+*The Single Message, Multiple Recipients testing option, listing all 18 test addresses*
 
 ## Workflow
 
@@ -21,13 +21,23 @@ This Certificate Discovery testing option is executed by sending a **single** Di
 -   Once the Direct message is received by the tool, the tool will evaluate that all expected certificates were used to encrypt the message. If any expected certificates are missing or if any unexpected certificates were used to encrypt the message, then the test will fail.
 -   The tool will generate a report indicating a success or failure and will report any certificates that were missing in the Direct message or any encountered certificates that were not expected. The results can be viewed in the Results and Reports section of the tool under Management → Results and Reports.
 
-![Certificate Discovery test results, showing the outcome for each address scenario](/images/certificate-discovery-multiple-recipients/2.png)
+![Certificate Discovery test results, showing the outcome for each address scenario](/images/certificate-discovery-multiple-recipients/3.png)
 
 *Certificate Discovery test results, showing the outcome for each address scenario*
 
 ::: tip
 **Note:** You will most likely receive “bounce” messages for the addresses that have non-discoverable, expired, or revoked certificates. This is expected and does not indicate a failure of the test.
 :::
+
+## Viewing the Scenario for an Address
+
+The test screen includes a **Test Scenario** dropdown beneath the address list. Selecting a Direct address from the dropdown displays the discovery scenario that address covers, without having to leave the tool. For addresses where a certificate is expected to be discovered, an **Expected Certificate** section is also shown with the Issuer DN, Subject DN, and Serial Number of the certificate your HISP should have used to encrypt the message.
+
+![The Test Scenario dropdown showing the scenario and expected certificate for a selected address](/images/certificate-discovery-multiple-recipients/2.png)
+
+*The Test Scenario dropdown showing the scenario and expected certificate for a selected address*
+
+The same information for all 18 addresses is listed in the [Discovery Scenarios](#discovery-scenarios) table below.
 
 ## Discovery Scenarios
 
