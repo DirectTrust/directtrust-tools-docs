@@ -4,9 +4,9 @@ title: Certificate Hosting
 
 # Certificate Hosting
 
-The Hosting tool verifies that certificates for a given Direct address can be published and resolved. It specifically tests that your HISP can publish a certificate in accordance with the Direct Certificate Discovery implementation guide.
+The Hosting tool verifies that certificates for a given Direct address can be published and resolved. It specifically tests that your HISP can publish a certificate in accordance with the Certificate Discovery for Direct Project Implementation Guide. 
 
-Select a Direct address from your registered list of Direct addresses and the tool will attempt to look up its associated certificates in accordance to the Implementation Guide for Certificate Discovery in Direct.
+Select a Direct address from your registered list of Direct addresses and the tool will attempt to look up its associated certificates in accordance to the Certificate Discovery for Direct Project Implementation Guide.
 
 ::: tip
 **Note:** You can only search for certificates for Direct addresses that you registered in the User Settings.
