@@ -10,9 +10,9 @@ Multiple named profiles can be saved for each protocol, which is useful if the s
 
 To manage profiles:
 
-- **Create** — Select New Profile from the Configuration Profile dropdown, fill in all fields, and click Save Configuration.
-- **Edit** — Select an existing profile from the dropdown. The form populates with its saved values. Make changes and click Save Configuration.
-- **Remove** — Select a profile from the dropdown and click Remove Profile.
+- **Create** — Select **New Profile** from the **Configuration Profile** dropdown, fill in all fields, and click **Save Configuration**.
+- **Edit** — Select an existing profile from the dropdown. The form populates with its saved values. Make changes and click **Save Configuration**.
+- **Remove** — Select a profile from the dropdown and click **Remove Profile**.
 
 Each protocol has its own set of configuration fields:
 

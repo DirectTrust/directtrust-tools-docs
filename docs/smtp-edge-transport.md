@@ -7,7 +7,7 @@ title: SMTP Transport
 This test suite exercises a HISP’s ability to receive messages from an edge over the SMTP transport protocol. The tests validate STARTTLS negotiation, server certificates, authentication (AUTH PLAIN), and outbound message delivery. It also includes negative-path tests such as invalid credentials and malformed messages to confirm the server correctly rejects them. In each of the tests, the testing tools will connect to your HISP over SMTP.
 
 ::: tip
-**Note:** Before you can perform these tests, you must first create an SMTP configuration profile with information that tells the testing tools how to connect and authenticate to your HISP using SMTP. See the Server Configuration documentation for how to create an SMTP configuration profile.
+**Note:** Before you can perform these tests, you must first create an SMTP configuration profile with information that tells the testing tools how to connect and authenticate to your HISP using SMTP. See the [SMTP Server Configuration](/server-configuration-smtp) documentation for how to create an SMTP configuration profile.
 :::
 
 ![SMTP Transport Test configuration](/images/smtp-edge-transport/1.png)
@@ -16,10 +16,10 @@ This test suite exercises a HISP’s ability to receive messages from an edge ov
 
 ## Workflow
 
--   Navigate to HISP Tools > EdgeProtocols > SMTP and select the SMTP Transport Test tab.
+-   Navigate to **HISP Tools > Edge Protocols > SMTP** and select the **SMTP Transport Test** tab.
 -   Select an SMTP configuration profile for the SMTP server that you would like to test.
 -   Select a timeout value (1–5 minutes). A longer timeout allows more time for your system to send messages to the testing tool’s HISP.
--   Click Run Tests. The tool immediately begins connecting to your HISP using SMTP and sending messages from the configured SMTP email account. It monitors SMTP command responses and, when applicable, looks for received messages in the tool’s HISP. Monitoring continues until the timeout threshold is exceeded.
+-   Click **Run Tests**. The tool immediately begins connecting to your HISP using SMTP and sending messages from the configured SMTP email account. It monitors SMTP command responses and, when applicable, looks for received messages in the tool’s HISP. Monitoring continues until the timeout threshold is exceeded.
 -   Results are displayed in real time as each test scenario completes, with status indicators for running, success, failed, and aborted.
 
 ![Test scenarios running in real time](/images/smtp-edge-transport/2.png)
@@ -27,7 +27,7 @@ This test suite exercises a HISP’s ability to receive messages from an edge ov
 *Test scenarios running in real time*
 
 -   Once all scenarios finish, the overall suite status is shown (SUCCESS, FAILED, or ABORTED).
--   The tool will generate a report indicating a success or failure and will report any scenarios that failed. The results can be viewed in the Results and Reports section of the tool under Management → Results and Reports.
+-   The tool will generate a report indicating a success or failure and will report any scenarios that failed. The results can be viewed in the [Results and Reports](/results-and-reports) section of the tool under **Management > Results and Reports**.
 
 ![Completed test suite showing overall SUCCESS status](/images/smtp-edge-transport/3.png)
 

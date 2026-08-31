@@ -12,7 +12,7 @@ When a user visits [DirectTrust Tools](https://accreditation-testing.directtrust
 
 ## Logging In
 
-Clicking the Login button in the header initiates the sign-in flow, which presents a login dialog with two options:
+Clicking the **Login** button in the header initiates the sign-in flow, which presents a login dialog with two options:
 
 -   **DirectTrust Auth** — For members of the DirectTrust Portal. This option redirects to the DirectTrust Auth service, which validates portal membership before completing the login.
 -   **Continue with Google** — For DirectTrust staff only. Staff members may authenticate using their Google/Gmail account associated with their DirectTrust staff profile.
@@ -29,7 +29,7 @@ Clicking the Login button in the header initiates the sign-in flow, which presen
 
 Selecting the DirectTrust Auth option redirects the user to the DirectTrust Auth service, which implements an email one-time password (OTP) flow validated against the DirectTrust Zoho Portal. The steps are:
 
--   **Step 1 — Email Entry**: The user is shown a sign-in form with the DirectTrust logo. They enter the email address associated with their DirectTrust Portal account and click Send Login Code.
+-   **Step 1 — Email Entry**: The user is shown a sign-in form with the DirectTrust logo. They enter the email address associated with their DirectTrust Portal account and click **Send Login Code**.
 
 ![DirectTrust Auth — email entry step](/images/getting-started/3.png)
 
@@ -41,7 +41,7 @@ Selecting the DirectTrust Auth option redirects the user to the DirectTrust Auth
 
 *DirectTrust Auth — one-time code verification step*
 
--   **Step 3 — Enter the Code**: The user types the 6-digit code into the large centered input field and clicks Verify Code. The code expires after 10 minutes. If the code was not received, the user can click Resend code to request a new one, or go back and enter a different email address.
+-   **Step 3 — Enter the Code**: The user types the 6-digit code into the large centered input field and clicks **Verify Code**. The code expires after 10 minutes. If the code was not received, the user can click **Resend code** to request a new one, or go back and enter a different email address.
 -   **Step 4 — Redirect**: After successful verification, the user is authenticated and the tool suite becomes available.
 
 **Important:** Only email addresses registered as active members of the DirectTrust Portal will be accepted. If you receive an error stating that your email is not recognized, please contact DirectTrust at <admin@directtrust.org> to verify your portal membership status.
@@ -66,9 +66,9 @@ The registration page asks for the following information:
 -   **Direct Addresses (required)** — One or more Direct addresses that will be associated with the user's account for testing purposes. At least one address must be provided. Additional addresses can be added by clicking Add Another Direct Address. If a user does not yet have or need a Direct address, any valid email address can be entered as a placeholder and updated later via User Settings.
 -   **Trust Anchors (optional)** — Users who need to test against their own Certificate Authority can upload one or more trust anchor certificates in PEM or DER format using the trust anchor upload control.
 
-**Tip:** All of the information entered during registration can be changed at any time after account creation by navigating to Management > User Settings.
+**Tip:** All of the information entered during registration can be changed at any time after account creation by navigating to **Management > User Settings**.
 
-After filling in the required fields, click Create Account. The system creates the account and the user is taken to the main tool dashboard. Clicking Cancel logs the user out without creating an account.
+After filling in the required fields, click **Create Account**. The system creates the account and the user is taken to the main tool dashboard. Clicking **Cancel** logs the user out without creating an account.
 
 ## Prerequisites
 

@@ -33,4 +33,4 @@ The Discovery tool offers two testing options. Both cover the same 18 discovery 
 **Note:** The Direct address that the test messages are sent from must be registered in the User Settings.
 :::
 
-Regardless of the option chosen, results are automatically saved and can be viewed in the Results and Reports section of the tool under Management → Results and Reports.
+Regardless of the option chosen, results are automatically saved and can be viewed in the [Results and Reports](/results-and-reports) section of the tool under **Management > Results and Reports**.

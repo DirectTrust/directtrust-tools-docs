@@ -20,13 +20,13 @@ The DirectTrust Tools interface is divided into three persistent areas: the head
 
 ### Header Bar
 
-The header spans the full width of the page and contains the DirectTrust logo on the left and authentication controls on the right. When a user is not logged in, a Login button is displayed.
+The header spans the full width of the page and contains the DirectTrust logo on the left and authentication controls on the right. When a user is not logged in, a **Login** button is displayed.
 
 ![Header bar before login](/images/overview/1.png)
 
 *Header bar before login*
 
-After login, the button is replaced by the user's name (and avatar if available) along with a Logout button.
+After login, the button is replaced by the user's name (and avatar if available) along with a **Logout** button.
 
 ![Header bar after login](/images/overview/2.png)
 
@@ -48,7 +48,6 @@ The sidebar is organized into sections. Only the sections and tools that the use
 | HISP Tools | Certificate Discovery, DirectProtocol, Edge Protocols (XDR, SMTP, POP3, IMAP) |
 | Directory Tools | Directory Search, Directory Reports, Compliance Checking |
 | Content Tools | Metadata and Payloads Inspection |
-| Monitoring | Infrastructure Monitoring |
 | Management | User Settings, Server Configuration, Results and Reports |
 
 ### Main Content Area

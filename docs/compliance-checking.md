@@ -6,15 +6,15 @@ title: Compliance Checking
 
 The Compliance Checking tool allows users to run a report of their contributions into the DirectTrust Directory to ensure that entries comply with DirectTrust Directory requirements. The tool then generates non-compliance reports for review.
 
-The tool downloads the current DirectTrust Directory CSV file (or you can choose to use a previous publication from an earlier date) and runs selected compliance checks against all entries. Results are grouped by state or HISP and packaged into a downloadable ZIP file; the zip files are downloaded from the Results and Reports section.
+The tool downloads the current DirectTrust Directory CSV file (or you can choose to use a previous publication from an earlier date) and runs selected compliance checks against all entries. Results are grouped by state or HISP and packaged into a downloadable ZIP file; the zip files are downloaded from the [Results and Reports](/results-and-reports) section.
 
 ## Workflow
 
--   Navigate to Directory Tools > Compliance Checking.
+-   Navigate to **Directory Tools > Compliance Checking**.
 -   Select how you would like your reports grouped.
 -   Optionally select the date of the directory file you would like to use (defaults to the current date).
 -   Select which compliance criteria you would like the tool to check.
--   Click Run Compliance Check. The job is submitted asynchronously.
+-   Click **Run Compliance Check**. The job is submitted asynchronously.
 -   A confirmation banner confirms that the job was submitted. Depending on the compliance checks you have selected, it may take several minutes for the report to complete.
 
 ![Compliance Checking configuration — grouping, date, and check criteria](/images/compliance-checking/1.png)
@@ -25,14 +25,14 @@ The tool downloads the current DirectTrust Directory CSV file (or you can choose
 
 *Job submitted confirmation*
 
--   You can check the report's status by going to the Results and Reports section and navigating to the Directory Compliance section. If the report is still running, you can see an indication of what the report generation is currently doing.
+-   You can check the report's status by going to the Results and Reports section and navigating to the **Directory Compliance** section. If the report is still running, you can see an indication of what the report generation is currently doing.
 
 ::: tip
 **Note:** Use the browser refresh button to see updated statuses, or click away from the Results and Reports section and back into it (the latter is recommended).
 :::
 
 -   Each submitted job includes a status of Running, Success, or Failure. Report jobs which have not completed will appear with a status of Running.
--   Once report generation has successfully completed, the report ZIP file is available for download in the Results and Reports section. Click the Download Compliance File link to download the report zip file. If a report job generates no issues for a specific report type, the zip package of report results will contain no result file for that report type.
+-   Once report generation has successfully completed, the report ZIP file is available for download in the Results and Reports section. Click the **Download Compliance File** link to download the report zip file. If a report job generates no issues for a specific report type, the zip package of report results will contain no result file for that report type.
 
 ![Directory Compliance results, showing job status and the Download Compliance File link](/images/compliance-checking/3.png)
 

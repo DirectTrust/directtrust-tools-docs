@@ -16,7 +16,7 @@ Select a Direct address from your registered list of Direct addresses and the to
 
 *Certificate Hosting lookup*
 
-If the certificate is successfully discovered, then details of the certificate such as subject, issuer, validity period, and key usage details can be viewed by pressing the View Certificate button.
+If the certificate is successfully discovered, then details of the certificate such as subject, issuer, validity period, and key usage details can be viewed by pressing the **View Certificate** button.
 
 ![Certificate discovered — View Certificate button](/images/certificate-hosting/2.png)
 
@@ -26,4 +26,4 @@ If the certificate is successfully discovered, then details of the certificate s
 
 *Certificate details view*
 
-Results are automatically saved and accessible in the Results and Reports section.
+Results are automatically saved and accessible in the [Results and Reports](/results-and-reports) section.

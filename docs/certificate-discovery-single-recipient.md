@@ -14,7 +14,7 @@ This option is intended for HISPs whose edge system sends to one recipient at a 
 
 ## Workflow
 
--   The user selects a test address from the Test Scenario dropdown. The scenario the address represents is described directly below the selected address, along with the certificate that the tool expects your HISP to discover and use when a certificate is expected to be found.
+-   The user selects a test address from the **Test Scenario** dropdown. The scenario the address represents is described directly below the selected address, along with the certificate that the tool expects your HISP to discover and use when a certificate is expected to be found.
 
 ![The Single Recipient Per Message testing option before a test address is selected](/images/certificate-discovery-single-recipient/1.png)
 
@@ -30,7 +30,7 @@ This option is intended for HISPs whose edge system sends to one recipient at a 
 
 -   The user’s HISP performs certificate discovery for that address, either discovering and using a valid certificate, rejecting an invalid certificate, or finding no certificate at all.
 -   If a valid certificate is discovered, the Direct message is encrypted with it and sent to the tool’s HISP. Once received, the tool inspects the message’s encryption envelope and verifies that the expected certificate — and only the expected certificate — was used. If the expected certificate is missing or an unexpected certificate was used, the test will fail.
--   The tool generates a result for that address indicating a success or failure, along with any unexpected certificates found in the message. The results can be viewed in the Results and Reports section of the tool under Management → Results and Reports.
+-   The tool generates a result for that address indicating a success or failure, along with any unexpected certificates found in the message. The results can be viewed in the [Results and Reports](/results-and-reports) section of the tool under **Management > Results and Reports**.
 -   Repeat for each of the remaining test addresses.
 
 ![A Single Recipient Per Message test result for one address](/images/certificate-discovery-single-recipient/4.png)

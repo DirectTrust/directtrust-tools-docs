@@ -7,7 +7,7 @@ title: SMTP Delivery Notification
 This test suite verifies a HISP’s compliance with the sending system requirements of the Implementation Guide for Delivery Notification when using the SMTP edge protocol. It tests that the sending system can deliver MDN dispatched messages back to the edge using a HISP-to-edge system’s agreed-upon edge protocol, as well as the sending system generating DSN failure messages (and delivering those failures back to the edge) under given failure conditions. In these tests, the testing tool will connect to your HISP using the SMTP edge protocol, attempt to send messages, and either retrieve the expected notification messages from your HISP using a “retrieval” edge protocol, or use an out-of-band manual inspection of the generated/delivered notification messages.
 
 ::: tip
-**Note:** Before you can perform these tests, you must first create an SMTP configuration profile with information that tells the testing tools how to connect and authenticate to your HISP using SMTP. Additionally, you can either configure an edge protocol to retrieve notification messages from the sending HISP using either POP3 or IMAP, or you can choose to manually verify the receipt of notification messages using your own manual/out-of-band process. See the Server Configuration documentation for how to create an SMTP, POP3, and IMAP configuration profile.
+**Note:** Before you can perform these tests, you must first create an SMTP configuration profile with information that tells the testing tools how to connect and authenticate to your HISP using SMTP. Additionally, you can either configure an edge protocol to retrieve notification messages from the sending HISP using either POP3 or IMAP, or you can choose to manually verify the receipt of notification messages using your own manual/out-of-band process. See the [Server Configuration](/server-configuration) documentation for how to create an [SMTP](/server-configuration-smtp), [POP3](/server-configuration-pop3), and [IMAP](/server-configuration-imap) configuration profile.
 :::
 
 ![Delivery Notification Test configuration](/images/smtp-edge-delivery-notification/1.png)
@@ -16,11 +16,11 @@ This test suite verifies a HISP’s compliance with the sending system requireme
 
 ## Workflow
 
--   Navigate to HISP Tools > EdgeProtocols > SMTP and select the Delivery Notification tab.
+-   Navigate to **HISP Tools > Edge Protocols > SMTP** and select the **Delivery Notification** tab.
 -   Select an SMTP configuration profile for the SMTP server that you would like to connect to.
 -   Select a configuration profile for the edge protocol that you would like to use to retrieve notification messages from your sending HISP. You can also choose to use manual inspection. In the manual inspection case, the tool will not attempt to retrieve any message from your HISP, and validation of the tests will occur through a manual out-of-band process.
 -   Select a timeout/delay (1–70 minutes). See the note below for more information about the timeout/delay.
--   Click Run Tests. The tool immediately begins connecting to your HISP using SMTP and sending messages from the configured SMTP email account. It monitors SMTP command responses and, when applicable, looks for received messages in the tool’s HISP. Monitoring continues until the timeout threshold is exceeded. When using the manual inspection mode, the test will conclude when the messages are successfully sent from the edge to the HISP via SMTP.
+-   Click **Run Tests**. The tool immediately begins connecting to your HISP using SMTP and sending messages from the configured SMTP email account. It monitors SMTP command responses and, when applicable, looks for received messages in the tool’s HISP. Monitoring continues until the timeout threshold is exceeded. When using the manual inspection mode, the test will conclude when the messages are successfully sent from the edge to the HISP via SMTP.
 -   Results are displayed in real time as each test scenario completes, with status indicators for running, success, failed, and aborted.
 
 ![Test scenarios running in real time](/images/smtp-edge-delivery-notification/2.png)
@@ -28,7 +28,7 @@ This test suite verifies a HISP’s compliance with the sending system requireme
 *Test scenarios running in real time*
 
 -   Once all scenarios finish, the overall suite status is shown (SUCCESS, FAILED, or ABORTED).
--   The tool will generate a report indicating a success or failure and will report any scenarios that failed. The results can be viewed in the Results and Reports section of the tool under Management → Results and Reports.
+-   The tool will generate a report indicating a success or failure and will report any scenarios that failed. The results can be viewed in the [Results and Reports](/results-and-reports) section of the tool under **Management > Results and Reports**.
 
 ![Completed test suite showing overall SUCCESS status](/images/smtp-edge-delivery-notification/3.png)
 

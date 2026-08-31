@@ -7,7 +7,7 @@ title: XDR To XDM Conversion
 This test suite exercises a HISP’s ability to receive messages from an edge via XDR, translate the XDR message into an SMTP message with an XDM attachment, and then send the SMTP message to the recipient(s) listed in the XDR message’s Direct addressing block. In each of the tests, the testing tool will connect to your HISP using XDR messages. The testing tool will validate your HISP’s generated XDM payload using NIST XDM validation libraries.
 
 ::: tip
-**Note:** Before you can perform these tests, you must first create an XDR configuration profile with information that tells the testing tool how to connect to your HISP’s XDR server. See the Server Configuration documentation for how to create an XDR configuration profile. If your XDR server requires mutual TLS authentication, you will need to include the testing tool’s XDR client certificate in your XDR server’s store of trusted certificates. You can obtain the testing tool’s XDR client certificate from the Prerequisites section of the testing tool’s home page.
+**Note:** Before you can perform these tests, you must first create an XDR configuration profile with information that tells the testing tool how to connect to your HISP’s XDR server. See the [XDR Server Configuration](/server-configuration-xdr) documentation for how to create an XDR configuration profile. If your XDR server requires mutual TLS authentication, you will need to include the testing tool’s XDR client certificate in your XDR server’s store of trusted certificates. You can obtain the testing tool’s XDR client certificate from the [Prerequisites](/getting-started#prerequisites) section of the testing tool’s home page.
 :::
 
 ![XDR To XDM Conversion test configuration](/images/xdr-to-xdm-conversion/1.png)
@@ -27,7 +27,7 @@ This test suite exercises a HISP’s ability to receive messages from an edge vi
 *Test scenarios running in real time*
 
 -   Once all scenarios finish, the overall suite status is shown (SUCCESS, FAILED, or ABORTED).
--   The tool generates a report indicating success or failure and lists any scenarios that failed. The results can be viewed in the Results and Reports section of the tool under **Management > Results and Reports**.
+-   The tool generates a report indicating success or failure and lists any scenarios that failed. The results can be viewed in the [Results and Reports](/results-and-reports) section of the tool under **Management > Results and Reports**.
 
 ![Completed test suite showing overall SUCCESS status](/images/xdr-to-xdm-conversion/3.png)
 

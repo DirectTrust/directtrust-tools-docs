@@ -19,8 +19,8 @@ All test suite runs and generated compliance reports are listed and grouped by t
 Through the duration of running tests and compliance reports, you can accumulate a large number of results and reports. It's a good idea to occasionally prune and clean up results that you no longer need. The steps below outline how to delete previous results.
 
 - Select one or more test suite runs or compliance reports using the checkboxes next to each result.
-- Use Select All to select every result.
-- Click Delete Selected to permanently remove the selected results.
+- Use **Select All** to select every result.
+- Click **Delete Selected** to permanently remove the selected results.
 
 ![Selecting results to delete](/images/results-and-reports/2.png)
 
@@ -28,7 +28,7 @@ Through the duration of running tests and compliance reports, you can accumulate
 
 ## Downloading Compliance and Report Files
 
-For Compliance Checking and Directory Report jobs, a Download button appears on the completed result. Clicking it downloads the resulting file stored in the cloud.
+For Compliance Checking and Directory Report jobs, a **Download** button appears on the completed result. Clicking it downloads the resulting file stored in the cloud.
 
 ![Downloading a compliance report file](/images/results-and-reports/3.png)
 
@@ -45,10 +45,10 @@ DirectTrust Tools can compile selected test results into a formal HTML and PDF r
 To generate a report:
 
 - Select the test suite runs to include by checking their checkboxes.
-- Optionally enable the Latest Only toggle, which includes only the most recent run of each test type rather than every selected run. This is useful for producing a clean current-state report when the same test has been run multiple times.
-- Click Generate Report. The system compiles the selected results into a branded PDF document and sends it to the reporting email address registered in the user's account settings.
+- Optionally enable the **Latest Only** toggle, which includes only the most recent run of each test type rather than every selected run. This is useful for producing a clean current-state report when the same test has been run multiple times.
+- Click **Generate Report**. The system compiles the selected results into a branded PDF document and sends it to the reporting email address registered in the user's account settings.
 - A green success banner confirms the report has been queued for delivery.
 
 ::: tip
-**Note:** Reports are sent to the Reporting Email address configured in User Settings (Management > User Settings). Ensure that address is current before generating a report. Directory Compliance and Reports are not included in generated reports.
+**Note:** Reports are sent to the Reporting Email address configured in User Settings (**Management > User Settings**). Ensure that address is current before generating a report. Directory Compliance and Reports are not included in generated reports.
 :::

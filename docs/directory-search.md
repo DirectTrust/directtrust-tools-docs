@@ -12,10 +12,10 @@ The Directory Search Tool makes looking up Directory listings easy to support tr
 
 ## Workflow
 
--   Navigate to Directory Tools > Directory Search.
+-   Navigate to **Directory Tools > Directory Search**.
 -   Use the search interface to search by organization name, Direct address, NPI, or other criteria depending on the search tab selected.
 -   Click the search button.
--   The first n search results are displayed within the application. You can page through additional search results using the Previous and Next buttons.
+-   The first n search results are displayed within the application. You can page through additional search results using the **Previous** and **Next** buttons.
 
 ![Directory Search results showing Direct addresses with the certificate discovery button](/images/directory-search/2.png)
 

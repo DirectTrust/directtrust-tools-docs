@@ -16,10 +16,10 @@ This test exercises a HISP’s ability to deliver received messages to an edge v
 
 ## Workflow
 
--   Navigate to HISP Tools > Edge Protocols > XDR and select the HISP to Edge tab.
+-   Navigate to **HISP Tools > Edge Protocols > XDR** and select the **HISP to Edge** tab.
 -   Select a Direct address to be tested from the dropdown of registered Direct addresses. Make sure the Direct address is configured to deliver XDR messages to the testing tool’s XDR endpoint.
 -   Select a timeout value (2–5 minutes). A longer timeout allows more time for your system to receive messages and deliver them to the edge.
--   Click Run Tests. The tool immediately begins sending Direct messages to the selected address, monitors for XDR messages being received at the edge, and continues until the timeout threshold is exceeded.
+-   Click **Run Tests**. The tool immediately begins sending Direct messages to the selected address, monitors for XDR messages being received at the edge, and continues until the timeout threshold is exceeded.
 -   Results are displayed in real time as each test scenario completes, with status indicators for running, success, failed, and aborted.
 
 ![Test scenarios running in real time](/images/xdr-hisp-to-edge/2.png)
@@ -27,7 +27,7 @@ This test exercises a HISP’s ability to deliver received messages to an edge v
 *Test scenarios running in real time*
 
 -   Once all scenarios finish, the overall suite status is shown (SUCCESS, FAILED, or ABORTED).
--   The tool will generate a report indicating a success or failure and will report any scenarios that failed. The results can be viewed in the Results and Reports section of the tool under Management → Results and Reports.
+-   The tool will generate a report indicating a success or failure and will report any scenarios that failed. The results can be viewed in the [Results and Reports](/results-and-reports) section of the tool under **Management > Results and Reports**.
 
 ![Completed test suite showing overall SUCCESS status](/images/xdr-hisp-to-edge/3.png)
 

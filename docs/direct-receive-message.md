@@ -16,7 +16,7 @@ This test exercises a HISP’s ability to receive properly formatted Direct mess
 
 ## Workflow
 
--   Navigate to HISP Tools > DirectProtocol and select the Receive Messages tab.
+-   Navigate to **HISP Tools > DirectProtocol** and select the **Receive Messages** tab.
 -   Select a Direct address to be tested from the dropdown of registered Direct addresses.
 -   You can either run all tests or select to run only a subset of tests.
 
@@ -25,7 +25,7 @@ This test exercises a HISP’s ability to receive properly formatted Direct mess
 :::
 
 -   Select a timeout value (2–5 minutes). A longer timeout allows more time for message delivery and MDN responses.
--   Click Run Tests. The tool immediately begins sending the test messages to the selected address, monitors for received notification messages, and continues until the timeout threshold is exceeded.
+-   Click **Run Tests**. The tool immediately begins sending the test messages to the selected address, monitors for received notification messages, and continues until the timeout threshold is exceeded.
 -   Results are displayed in real time as each test scenario completes, with status indicators for running, success, failed, and aborted.
 
 ![Test scenarios running in real time](/images/direct-receive-message/2.png)
@@ -33,7 +33,7 @@ This test exercises a HISP’s ability to receive properly formatted Direct mess
 *Test scenarios running in real time*
 
 -   Once all scenarios finish, the overall suite status is shown (SUCCESS, FAILED, or ABORTED).
--   The tool will generate a report indicating a success or failure and will report any scenarios that failed. The results can be viewed in the Results and Reports section of the tool under Management → Results and Reports.
+-   The tool will generate a report indicating a success or failure and will report any scenarios that failed. The results can be viewed in the [Results and Reports](/results-and-reports) section of the tool under **Management > Results and Reports**.
 
 ![Completed test suite showing overall SUCCESS status](/images/direct-receive-message/3.png)
 

@@ -12,12 +12,12 @@ This test validates the HISP’s ability to send correctly formatted Direct mess
 
 ## Workflow
 
--   Navigate to HISP Tools > DirectProtocol and select the Send Messages tab to obtain the Direct address that you need to send to.
+-   Navigate to **HISP Tools > DirectProtocol** and select the **Send Messages** tab to obtain the Direct address that you need to send to.
 -   Send a test Direct message to the specified Direct address. You may include any content that you like.
 -   When the tool receives the message, it processes the message for compliance against Direct Project specifications as well as DirectTrust policy.
--   The tool will generate a detailed report breaking down each individual stage of the message’s life cycle, from the original message, to message wrapping, to generating the detached signature, to the final encrypted message. It will report success or failure for all of the message’s stages and report any failures at a granular level. The results can be viewed in the Results and Reports section of the tool under Management → Results and Reports.
+-   The tool will generate a detailed report breaking down each individual stage of the message’s life cycle, from the original message, to message wrapping, to generating the detached signature, to the final encrypted message. It will report success or failure for all of the message’s stages and report any failures at a granular level. The results can be viewed in the [Results and Reports](/results-and-reports) section of the tool under **Management > Results and Reports**.
 
-**Prerequisite:** Your HISP must trust the DirectTrust testing trust anchor before these tests will succeed. See the Getting Started guide (Prerequisites) for download links. The Direct address that the message is sent from must also be registered in the User Settings.
+**Prerequisite:** Your HISP must trust the DirectTrust testing trust anchor before these tests will succeed. See the Getting Started guide ([Prerequisites](/getting-started#prerequisites)) for download links. The Direct address that the message is sent from must also be registered in the User Settings.
 
 The results contain a detailed analysis of each stage of the message’s processing life cycle, including required and optional message headers and additional important information specific to the lifecycle stage. By clicking the “View Message Content” link, you can also view the representation of the message in that specific stage. For example:
 

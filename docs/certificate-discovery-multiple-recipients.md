@@ -19,7 +19,7 @@ This Certificate Discovery testing option is executed by sending a **single** Di
 -   The user’s HISP will discover all valid certificates and reject any invalid certificates. In some cases, a certificate will not be discovered at all.
 -   The Direct message will be encrypted by all valid certificates that were discovered and sent to the tool’s HISP.
 -   Once the Direct message is received by the tool, the tool will evaluate that all expected certificates were used to encrypt the message. If any expected certificates are missing or if any unexpected certificates were used to encrypt the message, then the test will fail.
--   The tool will generate a report indicating a success or failure and will report any certificates that were missing in the Direct message or any encountered certificates that were not expected. The results can be viewed in the Results and Reports section of the tool under Management → Results and Reports.
+-   The tool will generate a report indicating a success or failure and will report any certificates that were missing in the Direct message or any encountered certificates that were not expected. The results can be viewed in the [Results and Reports](/results-and-reports) section of the tool under **Management > Results and Reports**.
 
 ![Certificate Discovery test results, showing the outcome for each address scenario](/images/certificate-discovery-multiple-recipients/3.png)
 
