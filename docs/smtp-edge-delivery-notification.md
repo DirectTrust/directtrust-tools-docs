@@ -25,6 +25,10 @@ This test suite verifies a HISP’s compliance with the sending system requireme
 **Note:** For accreditation purposes, you must have run all tests successfully either via a single test run or multiple test runs to be considered complete for accreditation.
 :::
 
+![Selecting individual tests to run](/images/smtp-edge-delivery-notification/individual-tests.png)
+
+*Selecting individual tests to run*
+
 -   Select a timeout/delay (1–70 minutes). See the note below for more information about the timeout/delay.
 -   Click **Run Tests**. The tool immediately begins connecting to your HISP using SMTP and sending messages from the configured SMTP email account. It monitors SMTP command responses and, when applicable, looks for received messages in the tool’s HISP. Monitoring continues until the timeout threshold is exceeded. When using the manual inspection mode, the test will conclude when the messages are successfully sent from the edge to the HISP via SMTP.
 -   Results are displayed in real time as each test scenario completes, with status indicators for running, success, failed, and aborted.

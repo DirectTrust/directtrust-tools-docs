@@ -24,6 +24,10 @@ This test suite exercises a HISP’s ability to receive messages from an edge vi
 **Note:** For accreditation purposes, you must have run all tests successfully either via a single test run or multiple test runs to be considered complete for accreditation.
 :::
 
+![Selecting individual tests to run](/images/xdr-to-xdm-conversion/individual-tests.png)
+
+*Selecting individual tests to run*
+
 -   Select a timeout value (1–5 minutes). A longer timeout allows more time for your system to send messages to the testing tool’s HISP.
 -   Click **Run Tests**. The tool immediately begins connecting to your HISP using XDR and sending messages from the configured XDR email account. It monitors the XDR transaction results and looks for received messages at the testing tool’s HISP. It then validates the XDM payload on the received messages. Monitoring continues until the timeout threshold is exceeded.
 -   Results are displayed in real time as each test scenario completes, with status indicators for running, success, failed, and aborted.

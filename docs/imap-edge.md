@@ -24,6 +24,10 @@ The IMAP testing tools verify an IMAP server implementation, including IMAPS/STL
 **Note:** For accreditation purposes, you must have run all tests successfully either via a single test run or multiple test runs to be considered complete for accreditation.
 :::
 
+![Selecting individual tests to run](/images/imap-edge/individual-tests.png)
+
+*Selecting individual tests to run*
+
 -   Select a timeout value (1 – 5 minutes). A longer timeout allows more time for your system to receive messages from the testing tool’s HISP.
 -   Click **Run Tests**. The tool immediately begins connecting to your HISP using IMAP to attempt to retrieve messages from the configured IMAP email account. It monitors IMAP command responses and, when applicable, retrieves messages from your HISP that have been sent from the testing tool’s HISP. Monitoring continues until the timeout threshold is exceeded.
 -   Results are displayed in real time as each test scenario completes, with status indicators for running, success, failed, and aborted.

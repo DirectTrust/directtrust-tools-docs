@@ -24,6 +24,10 @@ This test exercises a HISP’s ability to deliver received messages to an edge v
 **Note:** For accreditation purposes, you must have run all tests successfully either via a single test run or multiple test runs to be considered complete for accreditation.
 :::
 
+![Selecting individual tests to run](/images/xdr-hisp-to-edge/individual-tests.png)
+
+*Selecting individual tests to run*
+
 -   Select a timeout value (2–5 minutes). A longer timeout allows more time for your system to receive messages and deliver them to the edge.
 -   Click **Run Tests**. The tool immediately begins sending Direct messages to the selected address, monitors for XDR messages being received at the edge, and continues until the timeout threshold is exceeded.
 -   Results are displayed in real time as each test scenario completes, with status indicators for running, success, failed, and aborted.
