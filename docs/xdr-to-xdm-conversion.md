@@ -18,6 +18,12 @@ This test suite exercises a HISP’s ability to receive messages from an edge vi
 
 -   Navigate to **HISP Tools > Edge Protocols > XDR** and select the **XDR To XDM conversion** sub-tab under the **Edge To HISP** tab.
 -   Select an XDR configuration profile for the XDR server that you would like to test.
+-   You can either run all tests or select to run only a subset of tests.
+
+::: tip
+**Note:** For accreditation purposes, you must have run all tests successfully either via a single test run or multiple test runs to be considered complete for accreditation.
+:::
+
 -   Select a timeout value (1–5 minutes). A longer timeout allows more time for your system to send messages to the testing tool’s HISP.
 -   Click **Run Tests**. The tool immediately begins connecting to your HISP using XDR and sending messages from the configured XDR email account. It monitors the XDR transaction results and looks for received messages at the testing tool’s HISP. It then validates the XDM payload on the received messages. Monitoring continues until the timeout threshold is exceeded.
 -   Results are displayed in real time as each test scenario completes, with status indicators for running, success, failed, and aborted.

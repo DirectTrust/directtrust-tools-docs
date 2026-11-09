@@ -18,6 +18,12 @@ This test suite verifies a HISP’s compliance with the sending system requireme
 
 -   Navigate to **HISP Tools > Edge Protocols > XDR** and select the **Delivery Notification Test** sub-tab under the **Edge To HISP** tab.
 -   Select an XDR configuration profile for the XDR server that you would like to test.
+-   You can either run all tests or select to run only a subset of tests.
+
+::: tip
+**Note:** For accreditation purposes, you must have run all tests successfully either via a single test run or multiple test runs to be considered complete for accreditation.
+:::
+
 -   Select a timeout/delay (1–70 minutes). See the note below for more information about the timeout/delay.
 -   Click **Run Tests**. The tool immediately begins connecting to your HISP using XDR and sending messages from the configured XDR email account. It monitors the XDR transaction results and looks for XDR notification messages sent from your HISP back to the testing tool’s XDR endpoint. Monitoring continues until the timeout threshold is exceeded.
 -   Results are displayed in real time as each test scenario completes, with status indicators for running, success, failed, and aborted.

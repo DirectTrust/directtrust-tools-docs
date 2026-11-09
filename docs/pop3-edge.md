@@ -18,6 +18,12 @@ The POP3 testing tools verify a POP3 server implementation, including POP3S/STLS
 
 -   Navigate to **HISP Tools > Edge Protocols > POP3**.
 -   Select a POP3 configuration profile for the POP3 server that you would like to test.
+-   You can either run all tests or select to run only a subset of tests.
+
+::: tip
+**Note:** For accreditation purposes, you must have run all tests successfully either via a single test run or multiple test runs to be considered complete for accreditation.
+:::
+
 -   Select a timeout value (1 – 5 minutes). A longer timeout allows more time for your system to receive messages from the testing tool’s HISP.
 -   Click **Run Tests**. The tool immediately begins connecting to your HISP using POP3 to attempt to retrieve messages from the configured POP3 email account. It monitors POP3 command responses and, when applicable, retrieves messages from your HISP that have been sent from the testing tool’s HISP. Monitoring continues until the timeout threshold is exceeded.
 -   Results are displayed in real time as each test scenario completes, with status indicators for running, success, failed, and aborted.
