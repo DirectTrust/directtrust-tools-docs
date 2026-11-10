@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A [VitePress](https://vitepress.dev) documentation site for the DirectTrust Accreditation Testing Toolset (`accreditation-testing-backend`, `accreditation-backend-gateway`, `accreditation-testing-frontend` — a separate repo). Content used to live as static HTML baked into the backend service and served through a REST endpoint; it's now standalone Markdown published to GitHub Pages at `https://directtrust.github.io/directtrust-tools-docs/`.
+A [VitePress](https://vitepress.dev) documentation site for the DirectTrust Accreditation Testing Toolset (`accreditation-testing-backend`, `accreditation-backend-gateway`, `accreditation-testing-frontend` — a separate repo). Content used to live as static HTML baked into the backend service and served through a REST endpoint; it's now standalone Markdown published to GitHub Pages at `https://assets.directtrust.org/directtrust-tools-docs/`.
 
 This is a docs-only repo — there is no application code to build or test, just Markdown content and VitePress config.
 
@@ -34,5 +34,5 @@ Note: because of the `base: '/directtrust-tools-docs/'` config, visiting `http:/
 
 - Adding a page: create `docs/<slug>.md` with frontmatter, then add it to the `sidebar` array in `config.mts` under the correct nested section — these two steps are both required.
 - `::: tip ... :::` containers render the green callout boxes used throughout for notes.
-- Because this is a GitHub Pages *project* site (not the org's root `DirectTrust.github.io` repo), the `base` path in `config.mts` must always match the repo name exactly. If the repo is ever renamed, update `base` or every internal asset/image link 404s on the live site even though the build succeeds silently.
+- Because this is a GitHub Pages *project* site (served at `https://assets.directtrust.org/directtrust-tools-docs/`, not at the root of the vanity domain), the `base` path in `config.mts` must always match the repo name exactly. If the repo is ever renamed, update `base` or every internal asset/image link 404s on the live site even though the build succeeds silently.
 - Known pre-existing inconsistency: `docs/pop3-edge.md` has `title: POP3` in frontmatter (used in nav) but an `<h1>POP3 Edge</h1>` in the body — not a bug, leave as-is unless asked to fix it.

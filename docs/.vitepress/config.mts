@@ -13,7 +13,7 @@ export default defineConfig({
     nav: [
       { text: 'Overview', link: '/overview' },
       { text: 'Getting Started', link: '/getting-started' },
-      { text: 'DirectTrust Technical Docs Home', link: 'https://directtrust.github.io' }
+      { text: 'DirectTrust Assets Home', link: 'https://assets.directtrust.org' }
     ],
 
     sidebar: [
